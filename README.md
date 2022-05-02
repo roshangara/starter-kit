@@ -13,6 +13,8 @@ docker network create app
 
 docker compose pull
 
+sudo chown -R 5050:5050 storage/pgadmin/
+
 docker compose up -d mariadb postgres redis minio phpmyadmin pgadmin meilisearch mailhog selenium nginx
 
 ```
